@@ -1,6 +1,6 @@
 # Assignments from Algorithmic Design and Development (COP4533) 2024
 This course exposes the student to the topics of data structures, algorithms, algorithm design and analysis by focusing on design methods and efficiency analysis. Methods start with brute force, divide-and-conquer and then move on to more difficult ideas like dynamic programming and greedy technique. Popular puzzles are used to motivate students' interest and strengthen their skills in algorithmic problem solving. This is an advanced level programming course and it is recommended that students have completed a lower level programming language.
-
+ 
 # Assignment 1 - Euclid GCD vs Math GCD Performance Test
 ### euclidgcd.py and mathgcd.py  
 ![gcdmath and gcdeuclid](https://github.com/user-attachments/assets/90c5efff-edc1-45a3-82a9-d7ffa0a016f5)
