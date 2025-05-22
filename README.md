@@ -58,3 +58,22 @@ This program utilizes Dijkstra’s Algorithm and locates the shortest distance b
 ## program_b.py
 I was unable to complete program_b.py because I was unable to implement my graph class with the Bellman Ford algorithm.  I completed the algorithm, but I didn’t fully understand the values it needed to be passed, and how I should change my graph class to match the algorithm.  Bellman Ford’s algorithm has a time complexity of O(V*E), where V and E are the same as in the previous algorithms time complexity.  This means that this algorithm is less efficient than Dijkstra’s because O(ElogV) will rapidly scale when more vertices are introduced.  However, O(V*E)’s time complexity is faster to calculate, due to the lack of a logarithm, so it will be faster at smaller scale.  
 
+# Recursion Discussion Post
+For this discussion post, I found an interesting article all about the concept of recursion.  The first part that caught my attention is that the concept of recursion started in 1888 by Dedekind in an essay.  This essay “demonstrated that it was possible to state and prove the existence and uniqueness of functions defined by primitive recursion as mathematical theorems” (Dean, 2024, 1.1).  The recursion he introduced was primitive, but the concept of using the solution for continuous calculation is present.  
+
+From this article, I also learned that there are many forms of recursion, but the most common two are Primitive Recursion and Partial Recursive Functions.  Primitive Recursions are recursive functions where the upper bound, or the number of iterations of every loop can be determined before entering the loop.  All programs should incorporate this, or at least a failsafe to avoid infinite loops.  Partial Recursive Functions are partial functions from natural numbers to natural numbers that are "computable" in an intuitive sense.  These functions can have a definitive number of iterations, but this may be difficult to calculate.  
+
+This article was a great discovery, it is a large amount of organized information starting from the beginning of recursion in 1888, and it just got updated in March.  After reading this article, I am interested in the application of Partial Recursive Functions, and I think this could be responsible for random number generation.  Recursion is applied in all forms of programming, and it is very important to know when to apply recursive functions, and how to properly code recursive functions to reduce runtimes.  
+
+## References 
+Dean, W., & Naibo, A. (2024, March 1). Recursive functions. Stanford Encyclopedia of Philosophy. https://plato.stanford.edu/entries/recursive-functions/
+
+# Sorting Algorithms Discussion Post  
+The sorting algorithm I chose to take a closer look at is merge sort.  I find the merge sort algorithm to be interesting because it is much more effective the larger the sort.  On a smaller scale, merge sort performs slightly less than quick sort.  Merge sort operates by splitting the group into two halves recursively until each group only contains one entry.  Once this is done, the algorithm rebuilds the array by comparing each group to the groups adjacent to organize each subarray into two sorted arrays.  Once finally when the two original halves are back, now sorted, the algorithm goes through each half at the same time, comparing entries and rebuilding the group in complete order.  
+
+The article analyzes the time complexity of merge sort and I found it to be interesting.  It claims that in the worst-case scenario, merge sort has a time complexity of O(n)=nlog2n+n-1.  This is because, in the worst-case scenario, neither of the two arrays becomes empty, before the other one contains just one element (Pradhan, 2021, p. 8).  For this to happen, n must equal n-1.  The article also included graphs of the time complexities of merge sort, and I found it very interesting that there is no linear change.  The time required metric takes sudden spikes and declines as the number of elements increases.  
+
+In conclusion, I find merge sort to be one of the strongest and most interesting sorting algorithms because of its time complexity, and ease of implementation.  Merge sort is a recursive algorithm that relies on itself to constantly split an array into halves a not predetermined number of times.  
+
+## References  
+Pradhan, A. (2021, September 9). Everything you need to know about merge sort. Crio Blog. https://www.crio.do/blog/merge-sort-algorithm/
